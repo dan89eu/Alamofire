@@ -777,7 +777,7 @@ open class SessionManager {
         return upload
     }
 
-#if !os(watchOS)
+#if !os(watchOS) || !os(macOS)
 
     // MARK: - Stream Request
 

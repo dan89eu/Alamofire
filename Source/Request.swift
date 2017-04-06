@@ -620,7 +620,7 @@ open class UploadRequest: DataRequest {
 
 // MARK: -
 
-#if !os(watchOS)
+#if !os(watchOS) || os(macOS)
 
 /// Specific type of `Request` that manages an underlying `URLSessionStreamTask`.
 @available(iOS 9.0, macOS 10.11, tvOS 9.0, *)
